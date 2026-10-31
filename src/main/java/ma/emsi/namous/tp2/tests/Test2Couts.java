@@ -14,6 +14,8 @@ public class Test2Couts {
                 .build();
 
         String question = "Quel est le plus grand océan de la Terre?";
+        // test demandé dans le test7
+        //String question = "Je dois partir dans 2 jours à Paris ; j'y resterai 3 jours. Est-ce que je dois mettre un parapluie dans mes valises ?";
 
         ChatResponse response = model.chat(UserMessage.from(question));
         System.out.println("Réponse: " + response.aiMessage().text());
